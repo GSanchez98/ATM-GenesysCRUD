@@ -146,5 +146,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Store P\sp_Clientes.sql" />
+    <Content Include="Store P\sp_Configuracion.sql" />
+    <Content Include="Store P\sp_CuentaCliente.sql" />
+    <Content Include="Store P\sp_ServicioPublico.sql" />
+    <Content Include="Store P\sp_ServiciosClientes.sql" />
+    <Content Include="Store P\sp_TarjetaCredito.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
