@@ -35,7 +35,6 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtSaldo = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lstClientes = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -50,20 +49,19 @@
             // 
             // grpOperaciones
             // 
-            this.grpOperaciones.Controls.Add(this.btnSalir);
             this.grpOperaciones.Controls.Add(this.btnEliminar);
             this.grpOperaciones.Controls.Add(this.btnEditar);
             this.grpOperaciones.Controls.Add(this.btnAgregar);
-            this.grpOperaciones.Location = new System.Drawing.Point(96, 285);
+            this.grpOperaciones.Location = new System.Drawing.Point(668, 76);
             this.grpOperaciones.Name = "grpOperaciones";
-            this.grpOperaciones.Size = new System.Drawing.Size(499, 57);
+            this.grpOperaciones.Size = new System.Drawing.Size(115, 207);
             this.grpOperaciones.TabIndex = 29;
             this.grpOperaciones.TabStop = false;
-            this.grpOperaciones.Text = "Operaciones";
+            this.grpOperaciones.Text = "Opciones";
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(6, 19);
+            this.btnSalir.Location = new System.Drawing.Point(674, 290);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(102, 30);
             this.btnSalir.TabIndex = 16;
@@ -73,7 +71,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(377, 19);
+            this.btnEliminar.Location = new System.Drawing.Point(7, 164);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(102, 30);
             this.btnEliminar.TabIndex = 2;
@@ -83,7 +81,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(269, 19);
+            this.btnEditar.Location = new System.Drawing.Point(7, 97);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(102, 30);
             this.btnEditar.TabIndex = 1;
@@ -93,7 +91,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(158, 19);
+            this.btnAgregar.Location = new System.Drawing.Point(6, 19);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(102, 30);
             this.btnAgregar.TabIndex = 0;
@@ -103,35 +101,25 @@
             // 
             // txtSaldo
             // 
-            this.txtSaldo.Location = new System.Drawing.Point(78, 246);
+            this.txtSaldo.Location = new System.Drawing.Point(82, 296);
             this.txtSaldo.Name = "txtSaldo";
-            this.txtSaldo.Size = new System.Drawing.Size(384, 20);
+            this.txtSaldo.Size = new System.Drawing.Size(156, 20);
             this.txtSaldo.TabIndex = 28;
             // 
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
             this.lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelular.Location = new System.Drawing.Point(25, 247);
+            this.lblCelular.Location = new System.Drawing.Point(29, 297);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(47, 16);
             this.lblCelular.TabIndex = 22;
             this.lblCelular.Text = "Saldo:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(232, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 20);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Módulo de Clientes y servicios";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lstClientes);
-            this.groupBox1.Location = new System.Drawing.Point(44, 33);
+            this.groupBox1.Location = new System.Drawing.Point(32, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(206, 207);
             this.groupBox1.TabIndex = 30;
@@ -150,7 +138,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lstServicio);
-            this.groupBox2.Location = new System.Drawing.Point(256, 33);
+            this.groupBox2.Location = new System.Drawing.Point(244, 76);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(206, 207);
             this.groupBox2.TabIndex = 31;
@@ -168,9 +156,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lstClienteServicio);
-            this.groupBox3.Location = new System.Drawing.Point(468, 33);
+            this.groupBox3.Location = new System.Drawing.Point(456, 76);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(206, 236);
+            this.groupBox3.Size = new System.Drawing.Size(206, 207);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Servicios del cliente seleccionado";
@@ -180,22 +168,23 @@
             this.lstClienteServicio.FormattingEnabled = true;
             this.lstClienteServicio.Location = new System.Drawing.Point(14, 21);
             this.lstClienteServicio.Name = "lstClienteServicio";
-            this.lstClienteServicio.Size = new System.Drawing.Size(170, 199);
+            this.lstClienteServicio.Size = new System.Drawing.Size(170, 173);
             this.lstClienteServicio.TabIndex = 17;
             this.lstClienteServicio.Click += new System.EventHandler(this.lstClienteServicio_Click);
+            this.lstClienteServicio.SelectedIndexChanged += new System.EventHandler(this.lstClienteServicio_SelectedIndexChanged);
             // 
             // frmServicioCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 351);
+            this.ClientSize = new System.Drawing.Size(817, 329);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpOperaciones);
             this.Controls.Add(this.txtSaldo);
             this.Controls.Add(this.lblCelular);
-            this.Controls.Add(this.label1);
             this.Name = "frmServicioCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cintrol de cajeros automáticos GenisysATM";
@@ -218,7 +207,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtSaldo;
         private System.Windows.Forms.Label lblCelular;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox lstClientes;
         private System.Windows.Forms.GroupBox groupBox2;

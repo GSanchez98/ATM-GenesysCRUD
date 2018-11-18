@@ -11,7 +11,7 @@ using GenisysATM.Models;
 
 namespace GenisysATM_CRUD
 {
-    public partial class frmServicioCliente : Form
+    public partial class frmServicioCliente : MaterialSkin.Controls.MaterialForm
     {
         public frmServicioCliente()
         {
@@ -175,6 +175,11 @@ namespace GenisysATM_CRUD
                     Limpiar();
                 }
             }
+        }
+
+        private void lstClienteServicio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,7 +11,7 @@ using GenisysATM.Models;
 
 namespace GenisysATM_CRUD
 {
-    public partial class frmConfiguraciones : Form
+    public partial class frmConfiguraciones : MaterialSkin.Controls.MaterialForm
     {
         public frmConfiguraciones()
         {

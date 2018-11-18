@@ -11,7 +11,7 @@ using GenisysATM.Models;
 
 namespace GenisysATM_CRUD
 {
-    public partial class frmServicioPublico : Form
+    public partial class frmServicioPublico : MaterialSkin.Controls.MaterialForm
     {
         public frmServicioPublico()
         {
@@ -165,6 +165,11 @@ namespace GenisysATM_CRUD
                     Limpiar();
                 }
             }
+        }
+
+        private void lblIdentidad_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

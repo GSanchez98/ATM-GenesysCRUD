@@ -11,7 +11,7 @@ using GenisysATM.Models;
 
 namespace GenisysATM_CRUD
 {
-    public partial class frmCuentaCliente : Form
+    public partial class frmCuentaCliente : MaterialSkin.Controls.MaterialForm
     {
         public frmCuentaCliente()
         {
