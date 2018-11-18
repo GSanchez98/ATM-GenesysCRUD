@@ -33,7 +33,7 @@ namespace GenisysATM.Models
             /// <returns></returns>
         public static TarjetaCredito ObtenerTarjetaCliente(string Tarjeta, string Cliente)
         {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conexion = new Conexion(@"(local)\SQLEXPRESS01", "GenisysATM_V2");
             string sql;
             TarjetaCredito resultado = new TarjetaCredito();
 

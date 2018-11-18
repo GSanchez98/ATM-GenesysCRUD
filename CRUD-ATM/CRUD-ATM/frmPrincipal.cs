@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GenisysATM_CRUD
 {
-    public partial class frmPrincipal : Form
+    public partial class frmPrincipal : MaterialSkin.Controls.MaterialForm
     {
         public frmPrincipal()
         {
@@ -35,20 +35,7 @@ namespace GenisysATM_CRUD
             frmClientes cliente = new frmClientes();
             cliente.ShowDialog();
         }
-        /// <summary>
-        /// Cierra el menú principal y cierra la aplicación
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnSalir_Click_1(object sender, EventArgs e)
-        {
-            DialogResult resp = MessageBox.Show("¿Está seguro que desa salir del programa?", "Control de cajeros automáticos", MessageBoxButtons.YesNo);
 
-            if (resp == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
 
         /// <summary>
         /// Crea una instancia del formulario CRUD serviciosPublicos y lo muestra en

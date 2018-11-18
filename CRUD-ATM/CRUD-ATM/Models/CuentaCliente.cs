@@ -33,7 +33,7 @@ namespace GenisysATM.Models
         public static CuentaCliente ObtenerCliente(string cuenta)
         {
             
-            Conexion conn = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conn = new Conexion(@"(local)\SQLEXPRESS01", "GenisysATM_V2");
             CuentaCliente laCuenta = new CuentaCliente();
             string sql = @"SELECT *
                            FROM ATM.CuentaCliente

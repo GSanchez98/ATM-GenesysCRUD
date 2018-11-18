@@ -35,30 +35,27 @@
             this.btnTarjetas = new System.Windows.Forms.Button();
             this.btnServicios = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.lbltitulo = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.grpOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpOpciones
             // 
+            this.grpOpciones.BackColor = System.Drawing.Color.Transparent;
             this.grpOpciones.Controls.Add(this.button1);
             this.grpOpciones.Controls.Add(this.btnCuentas);
             this.grpOpciones.Controls.Add(this.btnConfiguracion);
             this.grpOpciones.Controls.Add(this.btnTarjetas);
             this.grpOpciones.Controls.Add(this.btnServicios);
             this.grpOpciones.Controls.Add(this.btnClientes);
-            this.grpOpciones.Controls.Add(this.lbltitulo);
-            this.grpOpciones.Location = new System.Drawing.Point(12, 33);
+            this.grpOpciones.Location = new System.Drawing.Point(12, 77);
             this.grpOpciones.Name = "grpOpciones";
-            this.grpOpciones.Size = new System.Drawing.Size(487, 248);
+            this.grpOpciones.Size = new System.Drawing.Size(419, 169);
             this.grpOpciones.TabIndex = 7;
             this.grpOpciones.TabStop = false;
-            this.grpOpciones.Text = "Opciones Disponibles";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(175, 147);
+            this.button1.Location = new System.Drawing.Point(156, 96);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 58);
             this.button1.TabIndex = 13;
@@ -68,7 +65,7 @@
             // 
             // btnCuentas
             // 
-            this.btnCuentas.Location = new System.Drawing.Point(349, 32);
+            this.btnCuentas.Location = new System.Drawing.Point(291, 21);
             this.btnCuentas.Name = "btnCuentas";
             this.btnCuentas.Size = new System.Drawing.Size(102, 58);
             this.btnCuentas.TabIndex = 12;
@@ -78,7 +75,7 @@
             // 
             // btnConfiguracion
             // 
-            this.btnConfiguracion.Location = new System.Drawing.Point(166, 32);
+            this.btnConfiguracion.Location = new System.Drawing.Point(156, 21);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(102, 58);
             this.btnConfiguracion.TabIndex = 11;
@@ -88,7 +85,7 @@
             // 
             // btnTarjetas
             // 
-            this.btnTarjetas.Location = new System.Drawing.Point(349, 147);
+            this.btnTarjetas.Location = new System.Drawing.Point(291, 96);
             this.btnTarjetas.Name = "btnTarjetas";
             this.btnTarjetas.Size = new System.Drawing.Size(102, 58);
             this.btnTarjetas.TabIndex = 10;
@@ -98,7 +95,7 @@
             // 
             // btnServicios
             // 
-            this.btnServicios.Location = new System.Drawing.Point(20, 147);
+            this.btnServicios.Location = new System.Drawing.Point(20, 96);
             this.btnServicios.Name = "btnServicios";
             this.btnServicios.Size = new System.Drawing.Size(102, 58);
             this.btnServicios.TabIndex = 9;
@@ -108,7 +105,7 @@
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(20, 32);
+            this.btnClientes.Location = new System.Drawing.Point(20, 21);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(102, 58);
             this.btnClientes.TabIndex = 8;
@@ -116,39 +113,17 @@
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // lbltitulo
-            // 
-            this.lbltitulo.AutoSize = true;
-            this.lbltitulo.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(162, 109);
-            this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(127, 24);
-            this.lbltitulo.TabIndex = 7;
-            this.lbltitulo.Text = "Genisys ATM";
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(361, 298);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(138, 34);
-            this.btnSalir.TabIndex = 14;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 344);
-            this.Controls.Add(this.btnSalir);
+            this.ClientSize = new System.Drawing.Size(446, 258);
             this.Controls.Add(this.grpOpciones);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cajeros Automáticos Genisys ATM";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.grpOpciones.ResumeLayout(false);
-            this.grpOpciones.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -161,8 +136,6 @@
         private System.Windows.Forms.Button btnTarjetas;
         private System.Windows.Forms.Button btnServicios;
         private System.Windows.Forms.Button btnClientes;
-        private System.Windows.Forms.Label lbltitulo;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button button1;
     }
 }

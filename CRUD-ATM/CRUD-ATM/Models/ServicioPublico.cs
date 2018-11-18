@@ -28,7 +28,7 @@ namespace GenisysATM.Models
         /// <returns>unServicio</returns>
         public static ServicioPublico obtenerServicio(string descripcion)
         {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conexion = new Conexion(@"(local)\SQLEXPRESS01", "GenisysATM_V2");
             string sql;
             ServicioPublico resultado = new ServicioPublico();
 

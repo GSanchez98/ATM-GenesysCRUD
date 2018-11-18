@@ -11,7 +11,7 @@ using GenisysATM.Models;
 
 namespace GenisysATM_CRUD
 {
-    public partial class frmClientes : Form
+    public partial class frmClientes : MaterialSkin.Controls.MaterialForm
     {
         public frmClientes()
         {
@@ -255,24 +255,6 @@ namespace GenisysATM_CRUD
                 txtCelular.Text = existe.celular;
                 txtIdentidad.Text = existe.identidad;
             }
-        }
-
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // frmClientes
-            // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "frmClientes";
-            this.Load += new System.EventHandler(this.frmClientes_Load_1);
-            this.ResumeLayout(false);
-
-        }
-
-        private void frmClientes_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

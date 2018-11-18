@@ -62,7 +62,7 @@ namespace GenisysATM.Models
             List<ServicioCliente> resultados = new List<ServicioCliente>();
 
             //instanciamos la conexion
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conexion = new Conexion(@"(local)\SQLEXPRESS01", "GenisysATM_V2");
             string sql = @"DECLARE @codigoCliente INT
                   SET @codigoCliente =(SELECT id FROM ATM.Cliente WHERE nombres=@Cliente);
                   SELECT sp.descripcion,sc.saldo FROM ATM.ServicioPublico AS sp INNER JOIN ATM.ServicioCliente AS sc ON sc.idServicio=sp.id and sc.idCliente=@codigoCliente;

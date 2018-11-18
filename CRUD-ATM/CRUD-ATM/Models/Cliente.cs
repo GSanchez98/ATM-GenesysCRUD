@@ -30,7 +30,7 @@ namespace GenisysATM.Models
         /// <returns>Un objeto de tipo Cliente.</returns>
         public static Cliente ObtenerCliente(string identidad)
         {
-            Conexion conexion = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conexion = new Conexion(@"(local)\\SQLEXPRESS01", "GenisysATM_V2");
             string sql;
             Cliente resultado = new Cliente();
 

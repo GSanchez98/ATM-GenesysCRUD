@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuentaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicioCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicioPublico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTargetasCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\ATM.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Conexion.cs" />
@@ -55,43 +79,50 @@
     <Compile Include="Models\ServicioCliente.cs" />
     <Compile Include="Models\ServicioPublico.cs" />
     <Compile Include="Models\TarjetaCredito.cs" />
-    <Compile Include="frmClientes.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmClientes.Designer.cs" />
-    <Compile Include="frmConfiguraciones.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmConfiguraciones.Designer.cs">
+      <DependentUpon>frmConfiguraciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConfiguraciones.Designer.cs" />
-    <Compile Include="frmCuentaCliente.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmCuentaCliente.Designer.cs">
+      <DependentUpon>frmCuentaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCuentaCliente.Designer.cs" />
-    <Compile Include="frmPrincipal.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs" />
-    <Compile Include="frmServicioCliente.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmServicioCliente.Designer.cs">
+      <DependentUpon>frmServicioCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmServicioCliente.Designer.cs" />
-    <Compile Include="frmServicioPublico.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmServicioPublico.Designer.cs">
+      <DependentUpon>frmServicioPublico.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmServicioPublico.Designer.cs" />
-    <Compile Include="frmTargetasCredito.cs">
-      <SubType>Form</SubType>
+    <Compile Include="frmTargetasCredito.Designer.cs">
+      <DependentUpon>frmTargetasCredito.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTargetasCredito.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmClientes.resx" />
-    <EmbeddedResource Include="frmConfiguraciones.resx" />
-    <EmbeddedResource Include="frmCuentaCliente.resx" />
-    <EmbeddedResource Include="frmPrincipal.resx" />
-    <EmbeddedResource Include="frmServicioCliente.resx" />
-    <EmbeddedResource Include="frmServicioPublico.resx" />
-    <EmbeddedResource Include="frmTargetasCredito.resx" />
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguraciones.resx">
+      <DependentUpon>frmConfiguraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuentaCliente.resx">
+      <DependentUpon>frmCuentaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicioCliente.resx">
+      <DependentUpon>frmServicioCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicioPublico.resx">
+      <DependentUpon>frmServicioPublico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTargetasCredito.resx">
+      <DependentUpon>frmTargetasCredito.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -101,6 +132,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

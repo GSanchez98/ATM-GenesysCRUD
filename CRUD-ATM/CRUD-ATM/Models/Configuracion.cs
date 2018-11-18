@@ -33,7 +33,7 @@ namespace GenisysATM.Models
         {
             string valor = "";
             SqlDataReader rdr;
-            Conexion conn = new Conexion(@"(local)\sqlexpress", "GenisysATM_V2");
+            Conexion conn = new Conexion(@"(local)\SQLEXPRESS01", "GenisysATM_V2");
             SqlCommand cmd = conn.EjecutarComando(@"SELECT valor 
                                                     FROM ATM.Configuracion 
                                                     WHERE appKey = @key");
